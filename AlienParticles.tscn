@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://8n66pqaek5no"]
+
+[node name="AlienParticles" type="CPUParticles2D"]
+emitting = false
+amount = 300
+one_shot = true
+explosiveness = 1.0
+lifetime_randomness = 0.5
+spread = 180.0
+gravity = Vector2(0, 800)
+initial_velocity_min = 45.45
+initial_velocity_max = 300.0
+damping_max = 72.727
+scale_amount_min = 3.0
+scale_amount_max = 6.0
+color = Color(1, 0.446282, 0.988369, 1)

@@ -1,0 +1,62 @@
+[gd_scene load_steps=9 format=4 uid="uid://ciqsqb46khgk5"]
+
+[ext_resource type="Script" path="res://world.gd" id="1_seh80"]
+[ext_resource type="Texture2D" uid="uid://dpaiumnyrvkhg" path="res://colored_desert.png" id="2_un7lc"]
+[ext_resource type="Texture2D" uid="uid://du6rcu4pyqy2l" path="res://elementStone011.png" id="3_swcsq"]
+[ext_resource type="PackedScene" uid="uid://c1p47b41o437v" path="res://cannon.tscn" id="4_8wpnu"]
+[ext_resource type="PackedScene" uid="uid://ds3m6oeovt27c" path="res://evil_alien.tscn" id="5_i2kjh"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ebbeb"]
+texture = ExtResource("3_swcsq")
+texture_region_size = Vector2i(70, 70)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-35, -35, 35, -35, 35, 35, -35, 35)
+
+[sub_resource type="TileSet" id="TileSet_47w20"]
+tile_size = Vector2i(70, 70)
+physics_layer_0/collision_layer = 1
+sources/3 = SubResource("TileSetAtlasSource_ebbeb")
+
+[sub_resource type="LabelSettings" id="LabelSettings_473tu"]
+font_size = 48
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_seh80")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(582, 300)
+scale = Vector2(1.13281, 1)
+texture = ExtResource("2_un7lc")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAPAAgAAwAAAAAAAAAOAAgAAwAAAAAAAAANAAgAAwAAAAAAAAAMAAgAAwAAAAAAAAALAAgAAwAAAAAAAAAKAAgAAwAAAAAAAAAJAAgAAwAAAAAAAAAIAAgAAwAAAAAAAAAHAAgAAwAAAAAAAAAGAAgAAwAAAAAAAAADAAgAAwAAAAAAAAACAAgAAwAAAAAAAAABAAgAAwAAAAAAAAAAAAgAAwAAAAAAAAAEAAgAAwAAAAAAAAAFAAgAAwAAAAAAAAAQAAgAAwAAAAAAAAAQAAcAAwAAAAAAAAAQAAYAAwAAAAAAAAAQAAUAAwAAAAAAAAAQAAQAAwAAAAAAAAAQAAMAAwAAAAAAAAAQAAIAAwAAAAAAAAAQAAEAAwAAAAAAAAA=")
+tile_set = SubResource("TileSet_47w20")
+
+[node name="Cannon" parent="." instance=ExtResource("4_8wpnu")]
+unique_name_in_owner = true
+position = Vector2(80, 526)
+
+[node name="PowerLabel" type="Label" parent="."]
+unique_name_in_owner = true
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Power: X"
+label_settings = SubResource("LabelSettings_473tu")
+
+[node name="AngleLabel" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = 3.0
+offset_top = 93.0
+offset_right = 205.0
+offset_bottom = 161.0
+theme_override_font_sizes/font_size = 51
+text = "Angle: X"
+
+[node name="EvilAlien2" parent="." instance=ExtResource("5_i2kjh")]
+position = Vector2(1021, 468)
+
+[node name="EvilAlien" parent="." instance=ExtResource("5_i2kjh")]
+position = Vector2(851, 469)
+
+[connection signal="angle_changed" from="Cannon" to="." method="_on_cannon_angle_changed"]
+[connection signal="power_changed" from="Cannon" to="." method="_on_cannon_power_changed"]
