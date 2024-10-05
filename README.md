@@ -1,7 +1,10 @@
 # Exercise 1.1: 2D Physics-Based Gameplay
 ## Ethan Chester
 Copyright/3rd Party Assets
-+ Images from [Kenney's Physics Pack](https://kenney.nl/assets/physics-assets), licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/)
++ alienGreen_round.png from [Kenney's Physics Pack](https://kenney.nl/assets/physics-assets), licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/)
++ alienPink_round.png from [Kenney's Physics Pack](https://kenney.nl/assets/physics-assets), licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/)
++ elementStone011.png from [Kenney's Physics Pack](https://kenney.nl/assets/physics-assets), licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/)
++ colored_desert.png from [Kenney's Physics Pack](https://kenney.nl/assets/physics-assets), licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/) 
 
 Game Instructions:
 + Control the angle of the cannon using W and S
