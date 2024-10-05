@@ -43,7 +43,7 @@ func _process(delta: float) -> void:
 	
 	if Input.is_action_just_pressed("launch"):
 		var impulse := Vector2(1,0) * power
-		var ball : RigidBody2D = preload("res://ball.tscn").instantiate()
+		var ball : RigidBody2D = preload("res://ball/ball.tscn").instantiate()
 		get_parent().add_child(ball)
 		ball.global_position = global_position
 		ball.apply_impulse(impulse.rotated(launch_angle))

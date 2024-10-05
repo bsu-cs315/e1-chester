@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://world.gd" id="1_seh80"]
 [ext_resource type="Texture2D" uid="uid://dpaiumnyrvkhg" path="res://colored_desert.png" id="2_un7lc"]
 [ext_resource type="Texture2D" uid="uid://du6rcu4pyqy2l" path="res://elementStone011.png" id="3_swcsq"]
-[ext_resource type="PackedScene" uid="uid://c1p47b41o437v" path="res://cannon.tscn" id="4_8wpnu"]
+[ext_resource type="PackedScene" uid="uid://c1p47b41o437v" path="res://ball/cannon.tscn" id="4_8wpnu"]
 [ext_resource type="PackedScene" uid="uid://ds3m6oeovt27c" path="res://evil_alien.tscn" id="5_i2kjh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ebbeb"]
@@ -35,6 +35,11 @@ tile_set = SubResource("TileSet_47w20")
 [node name="Cannon" parent="." instance=ExtResource("4_8wpnu")]
 unique_name_in_owner = true
 position = Vector2(80, 526)
+power = null
+power_change_rate = null
+launch_angle = null
+angle_change_rate = null
+aliensLeft = null
 
 [node name="PowerLabel" type="Label" parent="."]
 unique_name_in_owner = true

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://ds3m6oeovt27c"]
 
-[ext_resource type="Script" path="res://evil_alien.gd" id="1_c4kmk"]
-[ext_resource type="Texture2D" uid="uid://bvbwxv2bx7uti" path="res://alienPink_round.png" id="2_gqypj"]
+[ext_resource type="Script" path="res://evil alien/evil_alien.gd" id="1_c4kmk"]
+[ext_resource type="Texture2D" uid="uid://bvbwxv2bx7uti" path="res://evil alien/alienPink_round.png" id="2_gqypj"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_7jbcl"]
 radius = 35.843

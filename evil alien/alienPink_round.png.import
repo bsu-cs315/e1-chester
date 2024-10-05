@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1nocqoyuuqbi"
-path="res://.godot/imported/alienGreen_round.png-ed08530713325c29d2b51f8edf333648.ctex"
+uid="uid://bvbwxv2bx7uti"
+path="res://.godot/imported/alienPink_round.png-9c6ccb701a525a7e6193b9f8d62adcdf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://alienGreen_round.png"
-dest_files=["res://.godot/imported/alienGreen_round.png-ed08530713325c29d2b51f8edf333648.ctex"]
+source_file="res://evil alien/alienPink_round.png"
+dest_files=["res://.godot/imported/alienPink_round.png-9c6ccb701a525a7e6193b9f8d62adcdf.ctex"]
 
 [params]
 
