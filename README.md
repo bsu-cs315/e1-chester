@@ -22,3 +22,12 @@ Auxillary Goals:
 + The projectile's angle is clamped between 0° and 180°. - COMPLETED
 + There is a non-ground target that the player can hit, and you have scripted specific feedback for hitting it. - COMPLETED
 + The player can modify the strength of the projectile's firing. - COMPLETED
+
+## Revision Report
+
+### Increment 1.1 - Week of September 10 Resubmission
++ Runtime errors have been fixed
++ Fixed the licenses in the readme
+
+### Increment 1.1 - Week of October 1 Minor Revision
++ Added revision report
