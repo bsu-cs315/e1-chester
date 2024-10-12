@@ -35,6 +35,9 @@ Auxillary Goals:
 ### Increment 1.1 - Week of October 1 Minor Revision
 + Added revision report
 
+### Increment 1.1 - Week of October 8 Resubmission
++ Resubmission for late minor revision
+
 # Exercise 1.2: Game Logic, Graphics, and Sound
 ## Ethan Chester
 Copyright/3rd Party Assets
