@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvbwxv2bx7uti"
-path="res://.godot/imported/alienPink_round.png-9c6ccb701a525a7e6193b9f8d62adcdf.ctex"
+path="res://.godot/imported/alienPink_round.png-b20153c28266c5463e3b934350d7ee02.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://evil alien/alienPink_round.png"
-dest_files=["res://.godot/imported/alienPink_round.png-9c6ccb701a525a7e6193b9f8d62adcdf.ctex"]
+source_file="res://evil_alien/alienPink_round.png"
+dest_files=["res://.godot/imported/alienPink_round.png-b20153c28266c5463e3b934350d7ee02.ctex"]
 
 [params]
 

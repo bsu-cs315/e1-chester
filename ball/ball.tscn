@@ -1,6 +1,5 @@
-[gd_scene load_steps=5 format=3 uid="uid://7g5qqqovo8ac"]
+[gd_scene load_steps=4 format=3 uid="uid://7g5qqqovo8ac"]
 
-[ext_resource type="Script" path="res://ball/ball.gd" id="1_jk53e"]
 [ext_resource type="Texture2D" uid="uid://d1nocqoyuuqbi" path="res://ball/alienGreen_round.png" id="2_ggd4d"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_liaby"]
@@ -12,7 +11,6 @@ radius = 37.0135
 [node name="Ball" type="RigidBody2D" groups=["projectile"]]
 scale = Vector2(0.8, 0.8)
 physics_material_override = SubResource("PhysicsMaterial_liaby")
-script = ExtResource("1_jk53e")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_vyjrf")

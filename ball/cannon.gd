@@ -44,7 +44,16 @@ func _process(delta: float) -> void:
 		await get_tree().create_timer(3).timeout
 		ball.queue_free()	
 		alienOut = false
+	if aliensLeft <= 0 and alienOut != true:
+		get_parent().get_node("%Win_Lose").text = "You Lose..."
+		await get_tree().create_timer(1.5).timeout
+		get_tree().change_scene_to_file("res://world/main_menu.tscn")
+	elif get_tree().get_nodes_in_group("enemies").size() <= 0:
+		get_parent().get_node("%Win_Lose").text = "You Win!"
+		await get_tree().create_timer(1.5).timeout
+		get_tree().change_scene_to_file("res://world/main_menu.tscn")
 		
+	
 func _update_power_label() -> void:
 	get_parent().get_node("%PowerLabel").text = "power %d" % power
 	
@@ -52,7 +61,7 @@ func _update_angle_label() -> void:
 	get_parent().get_node("%AngleLabel").text = "Angle %d" % rad_to_deg(launch_angle)
 	
 func _update_aliens_left() -> void:
-	get_parent().get_node("%AliensLeft").text = "Aliens Left: %d" % aliensLeft
+	get_parent().get_node("%AliensLeft").text = "Attack Aliens Left: %d" % aliensLeft
 
 func _draw() -> void:
 	draw_circle(Vector2.ZERO, 40, Color.BLACK)

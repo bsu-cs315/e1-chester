@@ -71,14 +71,5 @@ position = Vector2(1021, 468)
 [node name="EvilAlien" parent="." instance=ExtResource("5_i2kjh")]
 position = Vector2(851, 469)
 
-[node name="Win_Lose" type="Label" parent="."]
-unique_name_in_owner = true
-offset_left = 340.0
-offset_top = 218.0
-offset_right = 767.0
-offset_bottom = 352.0
-theme_override_colors/font_color = Color(0.0223904, 0, 0.965988, 1)
-theme_override_font_sizes/font_size = 91
-
 [connection signal="angle_changed" from="Cannon" to="." method="_on_cannon_angle_changed"]
 [connection signal="power_changed" from="Cannon" to="." method="_on_cannon_power_changed"]
